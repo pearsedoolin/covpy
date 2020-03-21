@@ -1,1 +1,4 @@
 .ipynb_checkpoints
+dist
+build
+covpy.egg-info

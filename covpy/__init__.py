@@ -1,4 +1,3 @@
-import requests
 import pandas as pd
 import datetime
 from urllib.error import HTTPError
