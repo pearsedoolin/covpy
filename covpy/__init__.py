@@ -39,7 +39,7 @@ class DataCollector:
                 cases_df[country] = country_df["Cases"].cumsum()
             else:
                 cases_df[country] = country_df["Cases"]
-            cases_df["World"] = cases_df[list(cases_df)].sum(axis=1)
+        cases_df["World"] = cases_df[list(cases_df)].sum(axis=1)
 
         return cases_df
     
@@ -60,6 +60,6 @@ class DataCollector:
                 deaths_df[country] = country_df["Deaths"].cumsum()
             else:
                 deaths_df[country] = country_df["Deaths"]
-            deaths_df["World"] = deaths_df[list(deaths_df)].sum(axis=1)
+        deaths_df["World"] = deaths_df[list(deaths_df)].sum(axis=1)
 
         return deaths_df
