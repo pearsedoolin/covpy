@@ -22,4 +22,4 @@ plt.show()
 ```
 
 And this will create the following graph
-<img src="example.png" alt="example_output" width="400"/>
+![example plot](example.png)
