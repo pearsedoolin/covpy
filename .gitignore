@@ -2,3 +2,6 @@
 dist
 build
 covpy.egg-info
+venv
+__pycache__/
+.idea/

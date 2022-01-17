@@ -3,14 +3,17 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
+with open('requirements.txt') as f:
+    required = f.read().splitlines()
+
 setuptools.setup(
      name='covpy',  
-     version='0.0.7',
+     version='0.0.',
      author="Pearse Doolin",
      author_email="pearsedoolin@gmail.com",
      description="A package for getting confirmed infection and death data on the 2019 coronavirus",
      long_description=long_description,
-   long_description_content_type="text/markdown",
+     long_description_content_type="text/markdown",
      url="https://github.com/pearsedoolin/covpy/",
      packages=setuptools.find_packages(),
      classifiers=[
@@ -19,7 +22,5 @@ setuptools.setup(
          "Operating System :: OS Independent",
      ],
     python_requires='>=3',
-    install_requires=['numpy', 'pandas'],
-
-
+    install_requires=required,
  )
